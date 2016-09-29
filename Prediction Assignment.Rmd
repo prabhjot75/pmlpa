@@ -129,7 +129,7 @@ plot(cmtree$table, col = cmtree$byClass, main = paste("Decision Tree Confusion M
 
 ```
 
-## Prediction using Random Forests
+## Prediction using Random Forest
 
 ```{r}
 set.seed(7575)
@@ -162,7 +162,6 @@ plot(gbmFit1, ylim=c(0.9, 1))
 
 ```
 
-
 ##  Predicting Results on the Test Data
 
 ```{r}
@@ -174,6 +173,6 @@ predictionB2
 
 ## Conclusion
 
-Random Forest and Boosted Regression was a superior model for prediction of exercise quality compared to rpart. The nominal categories were dependent on various variables and the interaction between them. The RF model had over 99% accuracy and fitted well to other subsamples of the data. However, the algorithm may not have as high of accuracy on other samples, particularly ones with different subjects.
+Random Forest and Boosted Regression were superior models for prediction of exercise quality compared to rpart. The nominal categories were dependent on various variables and the interaction between them. The RF, BR model had over 99% accuracy and fitted well to other subsamples of the data. However, the algorithm may not have as high of accuracy on other samples, particularly ones with different subjects.
 
 Overall, it is interesting to see how monitors are affected by the quality of an exercise and are able to predict the error made which is an important indicator for health and fitness as it is not just the quantity of exercise that can be collected and analyzed but also the quality.
